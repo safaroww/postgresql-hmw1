@@ -1,4 +1,3 @@
-from django.db import connection
 import psycopg2
 
 
@@ -7,7 +6,7 @@ connection = psycopg2.connect(
     password='asif2017',
     host='localhost',
     port='5432',
-    database='grocery_db'
+    database='grocery'
 )
 
 
@@ -30,6 +29,6 @@ CREATE TABLE employee(
 )
 """
 
-cursor.execute()
+cursor.execute(query)
 
 connection.commit()
