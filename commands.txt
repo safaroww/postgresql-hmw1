@@ -1,0 +1,4 @@
+psql -h localhost -U postgres
+köhnə db-ya girmək istəsək - psql -h localhost -d db_name -U postgres
+db-dan çıxmaq üçün - \q
+uygun db-ların siyahısı üçün - \l 
